@@ -1,0 +1,160 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+    xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns:m="sap.m"
+    xmlns:t="sap.ui.table"
+    xmlns:fb="sap.ui.comp.filterbar"
+     xmlns:v="sap.ui.comp.variants"
+	controllerName="TableDetails.controller.Page1"
+	height="100%">
+    <m:Page title="Library Management System" titleAlignment="Center">
+        <ObjectPageLayout id="ObjectPageLayout"
+                    useIconTabBar="true"
+                    showTitleInHeaderContent="true"
+                    showEditHeaderButton="true"
+                    editHeaderButtonPress="handleEditBtnPress"
+                    upperCaseAnchorBar="false">
+            <headerTitle>
+                <ObjectPageDynamicHeaderTitle>
+                    <expandedHeading>
+                        <m:HBox>
+                            <m:Title text="Members Data" wrapping="true"/>
+                        </m:HBox>
+                    </expandedHeading>
+                    <snappedHeading>
+                        <m:FlexBox  fitContainer="true" alignItems="Center">
+                            <m:Title text="Members Data" wrapping="true"/>
+                        </m:FlexBox>
+                    </snappedHeading>
+                </ObjectPageDynamicHeaderTitle>
+            </headerTitle>
+            <headerContent>
+                <fb:FilterBar id="filterbar"  useToolbar="false" showGoOnFB="false">
+                    <fb:filterItems>
+                        <fb:FilterItem name="A" label="{i18n>id}">
+                            <fb:control>
+                                <m:Input type="Text" change="onSelectChange" id="slId"/>
+                            </fb:control>
+                        </fb:FilterItem>
+                        <fb:FilterItem name="B" label="{i18n>member_name}">
+                            <fb:control>
+                                <m:Input type="Text" change="onSelectChange" id="slName"/>
+                            </fb:control>
+                        </fb:FilterItem>
+                        <fb:FilterItem name="C" label="{i18n>memberType}">
+                            <fb:control>
+                                <m:Select
+                                            id="slType"
+                                            change="onSelectChange"
+                                            forceSelection="false"
+                                            items="{path: 'emp>/memberType'}">
+                                    <core:Item key="{emp>key}" text="{emp>name}" />
+                                </m:Select>
+                            </fb:control>
+                        </fb:FilterItem>
+                        <fb:FilterItem name="D" label="{i18n>address}">
+                            <fb:control>
+                                <m:Input type="Text" change="onSelectChange" id="slAddress"/>
+                            </fb:control>
+                        </fb:FilterItem>
+                        <fb:FilterItem name="E" label="{i18n>issue_date}">
+                            <fb:control>
+                                <m:DatePicker
+                                            id="slIssue"
+                                            valueFormat="dd-MM-yyyy" displayFormat="dd-MM-yyyy"
+                                            change="onSelectChange"
+                                            />
+                            </fb:control>
+                        </fb:FilterItem>
+                        <fb:FilterItem name="F" label="{i18n>expiry_date}">
+                            <fb:control>
+                                <m:DatePicker 
+                                            id="slExpiry"
+                                            
+                                            valueFormat="dd-MM-yyyy" displayFormat="dd-MM-yyyy"
+                                            change="onSelectChange"
+                                            />
+                            </fb:control>
+                        </fb:FilterItem>
+                    </fb:filterItems>
+                </fb:FilterBar>
+            </headerContent>
+            <sections>
+                <ObjectPageSection titleUppercase="false" id="goalsSection" showTitle="false">
+                    <subSections>
+                        <ObjectPageSubSection id="goalsSectionSS1">
+                            <blocks>
+                                <m:Table id="empData" items="{path: 'emp>/Library'}" mode="MultiSelect" fixedLayout="false" growing="true" growingScrollToLoad="true" sticky="ColumnHeaders,HeaderToolbar" contextualWidth="Auto" autoPopinMode="true">
+                                    <m:headerToolbar>
+                                        <m:OverflowToolbar>
+                                            <m:content>
+                                                <m:Title text="Members" level="H2"/>
+                                                <m:ToolbarSpacer />
+                                                <m:Button icon="sap-icon://add" tooltip="{i18n>ad}" press=".addDetails" type="Transparent"/>
+                                                <m:Button icon="sap-icon://delete" tooltip="{i18n>dd}" type="Transparent" press=".deleteDetails"                        />
+                                                <m:Button press="onTableSettings" icon="sap-icon://drop-down-list" tooltip="Settings"/>
+                                            </m:content>
+                                        </m:OverflowToolbar>
+                                    </m:headerToolbar>
+                                    <m:columns>
+                                        <m:Column width="auto">
+                                            <m:Label text="{i18n>id}"/>
+                                        </m:Column>
+                                        <m:Column width="auto">
+                                            <m:Label text="{i18n>member_name}"/>
+                                        </m:Column>
+                                        <m:Column width="auto">
+                                            <m:Label text="{i18n>memberType}"/>
+                                        </m:Column>
+                                        <m:Column width="auto">
+                                            <m:Label text="{i18n>address}"/>
+                                        </m:Column>
+                                        <m:Column width="auto">
+                                            <m:Label text="{i18n>mobile}"/>
+                                        </m:Column>
+                                        <m:Column width="auto">
+                                            <m:Label text="{i18n>issue_date}"/>
+                                        </m:Column>
+                                        <m:Column width="auto" hAlign="End">
+                                            <m:Label text="{i18n>expiry_date}"/>
+                                        </m:Column>
+                                        <m:Column width="auto" hAlign="End" importance="High">
+                                            <m:footer>
+                                                <m:Label text="{i18n>expiry_date}"/>
+                                            </m:footer>
+                                        </m:Column>
+                                    </m:columns>
+                                    <m:ColumnListItem press="onPress" type="Navigation">
+                                        <!-- <m:Text text="{emp>member_id}"/> -->
+                                        <m:Text text="{emp>member_id}"/>
+                                        <m:Text text="{emp>name}"/>
+                                        <m:Text text="{emp>memberType}"/>
+                                        <m:Text text="{emp>address}"/>
+                                        <m:Text text="{emp>mobile}"/>
+                                        <m:Text text="{emp>member_issue}"/>
+                                        <m:Text text="{emp>member_expiry}"/>
+                                    </m:ColumnListItem>
+                                </m:Table>
+                            </blocks>
+                        </ObjectPageSubSection>
+                    </subSections>
+                </ObjectPageSection>
+            </sections>
+            <footer>
+                <m:OverflowToolbar>
+                    <m:ToolbarSpacer />
+                    <m:Button type="Accept" text="Accept"/>
+                    <m:Button type="Reject" text="Reject"/>
+                </m:OverflowToolbar>
+            </footer>
+        </ObjectPageLayout>
+    </m:Page>
+    <!-- <Tree
+		    id="Tree"
+		    items="{path: '/'}"
+			busyIndicatorDelay="0"
+			toggleOpenState="onToggleOpenState">
+			<StandardTreeItem title="{text}"/>
+		</Tree> -->
+</mvc:View>

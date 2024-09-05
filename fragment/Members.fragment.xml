@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:f="sap.ui.layout.form">
+    <VBox>
+        <f:SimpleForm>
+            <f:content>
+                
+                <Label class="data" text="{i18n>member_name}"/>
+                <Input value="{emp>name}" required="true"/>
+                <Label class="data" text="{i18n>memberType}" />
+                <Select
+					forceSelection="false"
+					selectedKey="{emp>memberType}"
+					items="{
+						path: 'emp>/memberType'
+						
+					}" required="true">
+                    <core:Item key="{emp>key}" text="{emp>name}" />
+                </Select>
+            </f:content>
+        </f:SimpleForm>
+    </VBox>
+</core:FragmentDefinition>

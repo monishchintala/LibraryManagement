@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:f="sap.ui.layout.form">
+    <VBox>
+        <f:SimpleForm>
+            <f:content>
+                
+                    <Label class="data" text="{i18n>book_id}" />
+                    	<Input
+						id="multiInput"
+						showValueHelp="true"
+						valueHelpOnly="true"
+						valueHelpRequest=".onValueHelpRequested"
+						suggestionItems="{
+							path: 'emp>/booksData',
+                            sorter: { path: 'emp>bkid' }
+                            
+							
+						}">
+					
+						<core:Item key="{emp>bkid}" text="{emp>bkid}" />
+					</Input>
+                    
+                    <Label class="data" text="{i18n>book_issue}:" />
+                    <DatePicker
+                                    
+                                    value="{emp>book_issue}" valueFormat="dd-MM-yyyy" displayFormat="dd-MM-yyyy"
+                                    class="data-item"/>
+                    
+            </f:content>
+        </f:SimpleForm>
+    </VBox>
+</core:FragmentDefinition>

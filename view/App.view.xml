@@ -1,0 +1,12 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	
+	xmlns="sap.m"
+   
+	controllerName="TableDetails.controller.Page1"
+	height="100%">
+    <App id="app">
+        <pages>
+            <!-- <mvc:XMLView viewName="TableDetails.view.Page1" /> -->
+        </pages>
+    </App>
+</mvc:View>

@@ -1,0 +1,306 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" height="100%"
+    xmlns:core="sap.ui.core"
+    xmlns:layout="sap.ui.layout"
+    xmlns:uxap="sap.uxap"
+    xmlns:build="sap.build"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+    xmlns:smartTable="sap.ui.comp.smarttable"
+    xmlns:smartVariant="sap.ui.comp.smartvariants"
+    xmlns:block="TableDetails.fragment"
+    xmlns:wc="TableDetails.control"
+    xmlns:table="sap.ui.table"
+    xmlns:smartField="sap.ui.comp.smartfield"
+    xmlns:smartmicrochart="sap.ui.comp.smartmicrochart" controllerName="TableDetails.controller.Page1">
+    <Page showHeader="false" floatingFooter="false" showFooter="{= ${viewModel>/showDetailClose}}">
+        <uxap:ObjectPageLayout id="detailobjectPage" class="height100" showTitleInHeaderContent="true" alwaysShowContentHeader="false" preserveHeaderStateOnScroll="true" headerContentPinnable="true" isChildPage="true" enableLazyLoading="true" showHeaderContent="{= ${viewModel>/showDetailClose}}" toggleHeaderOnTitleClick="{= ${viewModel>/showDetailClose}}" showFooter="{= ${viewModel>/showDetailClose}}" upperCaseAnchorBar="false" flexEnabled="true" navigate="onSectionChange" useIconTabBar="true">
+            <uxap:headerTitle>
+                <uxap:ObjectPageDynamicHeaderTitle stateChange="onHeaderTitleStateChange">
+                    <uxap:heading>
+                        <VBox height="100%" renderType="Bare" alignItems="Start" fitContainer="true">
+                            <HBox alignItems="Start">
+                                <HBox></HBox>
+                            </HBox>
+                            <VBox>
+                                <items>
+                                    <HBox alignItems="Center">
+                                        <items>
+                                            <Title text="{descr}" visible="true" class="TitleAlignPadding"/>
+                                            <ToolbarSeparator visible="{parts:[{path:'viewModel>/WorkspaceView_SRfilterMode'},{value:'vboxVariantManageSeparator'}, {path:'viewModel>/showDetailClose'}, {value:'true'} ],formatter:'TableDetails.controller.AnnotationHelper.getVariantManagementVisibility'}" class="sapUiTinyMarginBegin sapUiTinyMarginEnd"/>
+                                            <smartVariant:SmartVariantManagement id="__SVM01" showShare="true" persistencyKey="{parts: [{value: 'xVUIxWS_WSTZNW_L4'}, {path: 'viewModel>/wspvw'}], formatter: 'TableDetails.controller.AnnotationHelper.getPersistenceKeyforView'}::SV" showExecuteOnSelection="true" select="onFilterBarVariantSelect" visible="{parts:[{path:'viewModel>/WorkspaceView_SRfilterMode'},{value:'vboxVariantManage'},{path:'viewModel>/showDetailClose'}],formatter:'TableDetails.controller.AnnotationHelper.getVariantManagementVisibility'}" save="onFilterBarVariantSave" entitySet="WorkspaceView_SR" />
+                                        </items>
+                                    </HBox>
+                                    <Text text="" visible="false" />
+                                </items>
+                            </VBox>
+                        </VBox>
+                    </uxap:heading>
+                    <uxap:navigationActions>
+                        <SegmentedButton id="template::FilterSwitchButton" selectedKey="{viewModel>/WorkspaceView_SRfilterMode}" width="inherit" selectionChange="onFilterModeSegmentedButtonChange" visible="false">
+                            <layoutData>
+                                <OverflowToolbarLayoutData priority="NeverOverflow" />
+                            </layoutData>
+                            <items>
+                                <SegmentedButtonItem icon="sap-icon://filter-fields" tooltip="{i18n>FILTER_COMPACT}" key="compact" visible="{= ${viewModel>/showDetailClose}}"/>
+                                <SegmentedButtonItem icon="sap-icon://header" tooltip="{i18n>SNAPPING_HEADER}" key="snaphdr" visible="false" />
+                            </items>
+                            <customData>
+                                <core:CustomData key="entityName" value="WorkspaceView_SR" />
+                            </customData>
+                        </SegmentedButton>
+                    </uxap:navigationActions>
+                </uxap:ObjectPageDynamicHeaderTitle>
+            </uxap:headerTitle>
+            <uxap:headerContent>
+                <layout:VerticalLayout width="100%" class="sapSmartTemplatesAnalyticalListPageFilterContainer">
+                    <VBox visible="{parts:[{path:'viewModel>/WorkspaceView_SRfilterMode'},{value:'compact'}],formatter:'TableDetails.controller.AnnotationHelper.getHeaderControlVisibility'}" >
+                        <smartFilterBar:SmartFilterBar id="myfilter1" entitySet="WorkspaceView_SR" filterBarExpanded="true" persistencyKey="{parts: [{value: 'xVUIxWS_WSTZNW_L4'}, {path: 'viewModel>/wspvw'}], formatter: 'TableDetails.controller.AnnotationHelper.getPersistenceKeyforView'}::Filter" smartVariant="__SVM01" initialized="onFilterInitialized" afterVariantLoad="onAfterFilterVariantLoad" search="onFilterSearch" useToolbar="false" enableBasicSearch="true" considerSelectionVariants="true" filterChange="onFilterChange" showClearOnFB="true" showClearButton="true" assignedFiltersChanged="onAssignedFiltersChanged">
+                            <smartFilterBar:controlConfiguration>
+                                <smartFilterBar:ControlConfiguration key="CustomPriceFilter" visibleInAdvancedArea="true" index="20" 
+	                            label="Custom Button"
+                                    conditionType="{
+                                        module: 'TableDetails.control.MyTodayDateRange',
+                                        ignoreTime: false,
+                                        operations: {
+                                            filter: [
+                                                {path: 'category', contains: 'DYNAMIC', exclude:true},
+                                                {path: 'category', contains: 'YEAR', exclude:true},
+                                                {path: 'category', contains: 'QUARTER', exclude:true},
+                                                {path: 'category', contains: 'MONTH', exclude:true},
+                                                {path: 'category', contains: 'WEEK', exclude:true},
+                                                {path: 'category', contains: 'DAY', exclude:true}
+                                            ]
+                                        }
+                                    }"
+                                >
+                                    <smartFilterBar:customControl>
+                                        <Button
+                                        id="CustomPriceFilter"
+                                        text="Custom Button"
+                                        type="Emphasized"
+                                        press = "dialogOpen"
+                                    />
+                                    </smartFilterBar:customControl>
+                                </smartFilterBar:ControlConfiguration>
+                            </smartFilterBar:controlConfiguration>
+                            <smartFilterBar:layoutData>
+                                <FlexItemData shrinkFactor="0" />
+                            </smartFilterBar:layoutData>
+                        </smartFilterBar:SmartFilterBar>
+                        <smartTable:SmartTable smartFilterId="myfilter1" height="100%" width="100%" direction="Column" tableType="ResponsiveTable" fitContainer="true" visible="false" enableAutoBinding="true" entitySet="WorkspaceView_SR" showRowCount="true" header="Data Models" useExportToExcel="true" useVariantManagement="false" useTablePersonalisation="true" tableBindingPath="to_WorkspaceView_SR" beforeExport="onBeforeExport" requestAtLeastFields="row_id" beforeRebindTable="onBeforeRebindTable">
+                            <smartTable:layoutData>
+                                <FlexItemData growFactor="1" />
+                            </smartTable:layoutData>
+                            <smartTable:customToolbar>
+                                <OverflowToolbar design="Transparent">
+                                    <ToolbarSpacer />
+                                </OverflowToolbar>
+                            </smartTable:customToolbar>
+                            <Table sticky="ColumnHeaders" itemPress="onItemPress" mode="SingleSelectLeft" fixedLayout="false" growing="true" growingThreshold="15">
+                                <ColumnListItem type="Navigation" />
+                            </Table>
+                        </smartTable:SmartTable>
+                    </VBox>
+                </layout:VerticalLayout>
+            </uxap:headerContent>
+            <uxap:sections>
+                <uxap:ObjectPageSection id="mypagesection_X01" class="vistexPageSection height100" >
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection title="Header" class="sapSmartTemplatesObjectPageSubSection height100" visible="true">
+                            <uxap:customData>
+                                <core:CustomData key="Label" value="Header" />
+                            </uxap:customData>
+                            <uxap:blocks>
+                                <layout:Grid defaultSpan="XL12 L12 M12 S12" hSpacing="0" vSpacing="0" class="sapSmartTemplatesObjectPageSubSectionGrid height100">
+                                    <layout:ResponsiveSplitter id="to_X01::com.sap.vocabularies.UI.v1.LineItem::WSTZNW::DSC" class="vistexResponsiveSplitter">
+                                        <layout:PaneContainer>
+                                            <layout:SplitPane>
+                                                <ScrollContainer height="100%" horizontal="false" vertical="true">
+                                                    <Panel width="100%" height="100%" class="vistexResponsiveSplitterMainPanel noPadding">
+                                                        <smartTable:SmartTable height="100%" fixedColumnLayout="1" id="mytable_X01" persistencyKey="to_X01::com.sap.vocabularies.UI.v1.LineItem::WSTZNW::Table" smartVariant="__SVM01" tableBindingPath="to_X01" fitContainer="false" useOnlyOneSolidToolbar="true" beforeRebindTable="onTableRebind" enableAutoBinding="false" showRowCount="false" requestAtLeastFields="row_id,donum,edtst,cm_claim_vd,cm_date_vd,cm_dist_vd,cm_div_vd,hdsts,actcd,ptrnr1,updkz" useVariantManagement="true" useExportToExcel="false" showTablePersonalisation="false" header="Header" entitySet="X01" enableAutoColumnWidth="true" demandPopin="false" enableCustomFilter="true" noData="{i18n>NODATA}" fieldChange="onTableFieldChange" placeToolbarInTable="true" dataReceived="onDataReceived" smartFilterId="">
+                                                            <smartTable:customData>
+                                                                <core:CustomData key="useSmartToggle" value="true" />
+                                                                <core:CustomData key="useSmartField" value="true" />
+                                                                <core:CustomData key="dateFormatSettings" value='{"UTC":true,"style":"medium"}'/>
+                                                                <core:CustomData key="p13nDialogSettings" value='{filter:{visible:false}}'/>
+                                                            </smartTable:customData>
+                                                            <smartTable:layoutData>
+                                                                <FlexItemData growFactor="1" baseSize="0%" />
+                                                            </smartTable:layoutData>
+                                                            <smartTable:customToolbar>
+                                                                <OverflowToolbar design="Transparent">
+                                                                    <ToolbarSpacer />
+                                                                    <Button id="to_X01::com.sap.vocabularies.UI.v1.LineItem::WSTZNW::Table::Toolbar::X01_ADD" text="" icon="sap-icon://add" press="onCallActionFromToolBar" enabled="true" type="Transparent" visible="true">
+                                                                        <layoutData>
+                                                                            <OverflowToolbarLayoutData priority = "com.sap.vocabularies.UI.v1.ImportanceType/High"/>
+                                                                        </layoutData>
+                                                                        <customData>
+                                                                            <core:CustomData key="Type" value="com.sap.vocabularies.UI.v1.DataFieldForAction" />
+                                                                            <core:CustomData key="Action" value="X01_ADD" />
+                                                                            <core:CustomData key="Label" value="" />
+                                                                            <core:CustomData key="InvocationGrouping" value="com.sap.vocabularies.UI.v1.OperationGroupingType/Isolated"/>
+                                                                        </customData>
+                                                                    </Button>
+                                                                    <Button id="to_X01::com.sap.vocabularies.UI.v1.LineItem::WSTZNW::Table::Toolbar::X01_DELETE_ROWS" text="" icon="sap-icon://delete" press="onCallActionFromToolBar" enabled="true" type="Transparent" visible="true">
+                                                                        <layoutData>
+                                                                            <OverflowToolbarLayoutData priority = "com.sap.vocabularies.UI.v1.ImportanceType/High"/>
+                                                                        </layoutData>
+                                                                        <customData>
+                                                                            <core:CustomData key="Type" value="com.sap.vocabularies.UI.v1.DataFieldForAction" />
+                                                                            <core:CustomData key="Action" value="X01_DELETE_ROWS" />
+                                                                            <core:CustomData key="Label" value="" />
+                                                                            <core:CustomData key="InvocationGrouping" value="com.sap.vocabularies.UI.v1.OperationGroupingType/Isolated"/>
+                                                                        </customData>
+                                                                    </Button>
+                                                                    <Button id="to_X01::com.sap.vocabularies.UI.v1.LineItem::WSTZNW::Table::Toolbar::X01_REPROCESS" text="Reprocess" icon="" press="onCallActionFromToolBar" enabled="true" type="Transparent" visible="true">
+                                                                        <layoutData>
+                                                                            <OverflowToolbarLayoutData priority = "com.sap.vocabularies.UI.v1.ImportanceType/High"/>
+                                                                        </layoutData>
+                                                                        <customData>
+                                                                            <core:CustomData key="Type" value="com.sap.vocabularies.UI.v1.DataFieldForAction" />
+                                                                            <core:CustomData key="Action" value="X01_REPROCESS" />
+                                                                            <core:CustomData key="Label" value="Reprocess" />
+                                                                            <core:CustomData key="InvocationGrouping" value="com.sap.vocabularies.UI.v1.OperationGroupingType/Isolated"/>
+                                                                        </customData>
+                                                                    </Button>
+                                                                    <ToolbarSeparator visible="true" />
+                                                                    <Button icon="sap-icon://multiselect-all" type="Default" press="onTableSelectAll" class="selectAllButton" tooltip="Select All" visible="false">
+                                                                        <customData>
+                                                                            <core:CustomData key="Type" value="SelectAll" />
+                                                                            <core:CustomData key="selected" value="false" />
+                                                                        </customData>
+                                                                    </Button>
+                                                                    <Label text="{i18n>MULTISELECT}:" visible="true"/>
+                                                                    <Switch state="false" tooltip="{i18n>ENABLEMULTISELECT}" change="onTableSelectionModeChange" visible="true">
+                                                                        <customData>
+                                                                            <core:CustomData key="entitySet" value="X01" />
+                                                                        </customData>
+                                                                    </Switch>
+                                                                    <HBox visible="true"></HBox>
+                                                                </OverflowToolbar>
+                                                            </smartTable:customToolbar>
+                                                            <table:Table enableColumnReordering="true" selectionMode="Single" rowSelectionChange="onSelectionChange" class="vistexCompactStyle" visibleRowCount="20" threshold="0" visibleRowCountMode="Auto" selectionBehavior="Row" enableBusyIndicator="true" enableColumnFreeze="true" enableCellFilter="true" rowActionCount="1" rowHeight="19" enableSelectAll="false">
+                                                                <table:rowSettingsTemplate>
+                                                                    <table:RowSettings highlight="{path: 'updkz', formatter: 'TableDetails.controller.AnnotationHelper.setRowHighlightColor' }" />
+                                                                </table:rowSettingsTemplate>
+                                                                <table:rowActionTemplate>
+                                                                    <table:RowAction>
+                                                                        <table:items>
+                                                                            <table:RowActionItem  type="Navigation" press="onListNavigate" visible="true"/>
+                                                                        </table:items>
+                                                                    </table:RowAction>
+                                                                </table:rowActionTemplate>
+                                                                <table:columns>
+                                                                    <table:Column autoResizable="true" width="12.50em" sortProperty="donum" filterProperty="" visible="true">
+                                                                        <table:customData>
+                                                                            <core:CustomData key="p13nData" value="{'columnKey':'donum','leadingProperty':'donum', 'description':'' , 'displayBehaviour':'', 'navigationProperty':'', 'additionalProperty':'', 'sortProperty':'donum', 'filterProperty':'donum','columnIndex':'1'}" />
+                                                                        </table:customData>
+                                                                        <Label design="Standard" text="Object" />
+                                                                        <table:template>
+                                                                            <Text text="{donum}" wrapping="false" />
+                                                                        </table:template>
+                                                                    </table:Column>
+                                                                    <table:Column autoResizable="true" width="12.50em" sortProperty="edtst" filterProperty="" visible="true">
+                                                                        <table:customData>
+                                                                            <core:CustomData key="p13nData" value="{'columnKey':'edtst','leadingProperty':'edtst', 'description':'' , 'displayBehaviour':'', 'navigationProperty':'', 'additionalProperty':'', 'sortProperty':'edtst', 'filterProperty':'edtst','columnIndex':'2'}" />
+                                                                        </table:customData>
+                                                                        <Label design="Standard" text="" />
+                                                                        <table:template>
+                                                                            <HBox>
+                                                                                <Button type="{parts:[{path:'edtst'},{path:'row_id'},{path: 'message>/'}], formatter:'TableDetails.controller.AnnotationHelper.getEditStatusFieldState'}" text="{parts:[{path:'edtst'},{path:'row_id'},{path: 'message>/'}], formatter:'TableDetails.controller.AnnotationHelper.getEditStatusFieldCount'}" icon="{parts:[{path:'edtst'},{path:'row_id'},{path: 'message>/'}], formatter:'TableDetails.controller.AnnotationHelper.getEditStatusFieldIcon'}" enabled="{parts:[{path:'edtst'},{path:'row_id'},{path: 'message>/'}], formatter:'TableDetails.controller.AnnotationHelper.getEditStatusFieldActive'}" press="onEditStatusPress" visible="{parts:[{path:'edtst'},{value:'button'}], formatter:'TableDetails.controller.AnnotationHelper.getEditStatusFieldVisibility'}"/>
+                                                                                <Text text="{parts:[{path:'edtst'},{path:'row_id'},{path: 'message>/'}], formatter:'TableDetails.controller.AnnotationHelper.getEditStatusFieldCount'}" visible="{parts:[{path:'edtst'},{value:'text'}], formatter:'TableDetails.controller.AnnotationHelper.getEditStatusFieldVisibility'}" />
+                                                                            </HBox>
+                                                                        </table:template>
+                                                                    </table:Column>
+                                                                    <table:Column autoResizable="true" width="12.50em" sortProperty="cm_claim_vd" filterProperty="" visible="true">
+                                                                        <table:customData>
+                                                                            <core:CustomData key="p13nData" value="{'columnKey':'cm_claim_vd','leadingProperty':'cm_claim_vd', 'description':'' , 'displayBehaviour':'', 'navigationProperty':'', 'additionalProperty':'', 'sortProperty':'cm_claim_vd', 'filterProperty':'cm_claim_vd','columnIndex':'3'}" />
+                                                                        </table:customData>
+                                                                        <Label design="Standard" text="Claim#" />
+                                                                        <table:template>
+                                                                            <Text text="{cm_claim_vd}" wrapping="false" />
+                                                                        </table:template>
+                                                                    </table:Column>
+                                                                    <table:Column autoResizable="true" width="12.50em" sortProperty="cm_date_vd" filterProperty="" visible="true">
+                                                                        <table:customData>
+                                                                            <core:CustomData key="p13nData" value="{'columnKey':'cm_date_vd','leadingProperty':'cm_date_vd', 'description':'' , 'displayBehaviour':'', 'navigationProperty':'', 'additionalProperty':'', 'sortProperty':'cm_date_vd', 'filterProperty':'cm_date_vd','columnIndex':'4'}" />
+                                                                        </table:customData>
+                                                                        <Label design="Standard" text="Date" />
+                                                                        <table:template>
+                                                                            <Text text="{parts:[{path:'cm_date_vd'}],formatter: 'TableDetails.controller.AnnotationHelper.getChangeDateFormat'}" />
+                                                                        </table:template>
+                                                                    </table:Column>
+                                                                    <table:Column autoResizable="true" width="12.50em" sortProperty="cm_dist_vd" filterProperty="" visible="true">
+                                                                        <table:customData>
+                                                                            <core:CustomData key="p13nData" value="{'columnKey':'cm_dist_vd','leadingProperty':'cm_dist_vd', 'description':'' , 'displayBehaviour':'', 'navigationProperty':'', 'additionalProperty':'', 'sortProperty':'cm_dist_vd', 'filterProperty':'cm_dist_vd','columnIndex':'5'}" />
+                                                                        </table:customData>
+                                                                        <Label design="Standard" text="Distribution Channel" />
+                                                                        <table:template>
+                                                                            <Text text="{cm_dist_vd}" wrapping="false" />
+                                                                        </table:template>
+                                                                    </table:Column>
+                                                                    <table:Column autoResizable="true" width="12.50em" sortProperty="cm_div_vd" filterProperty="" visible="true">
+                                                                        <table:customData>
+                                                                            <core:CustomData key="p13nData" value="{'columnKey':'cm_div_vd','leadingProperty':'cm_div_vd', 'description':'' , 'displayBehaviour':'', 'navigationProperty':'', 'additionalProperty':'', 'sortProperty':'cm_div_vd', 'filterProperty':'cm_div_vd','columnIndex':'6'}" />
+                                                                        </table:customData>
+                                                                        <Label design="Standard" text="Division" />
+                                                                        <table:template>
+                                                                            <Text text="{cm_div_vd}" wrapping="false" />
+                                                                        </table:template>
+                                                                    </table:Column>
+                                                                    <table:Column autoResizable="true" width="12.50em" sortProperty="hdsts" filterProperty="" visible="true">
+                                                                        <table:customData>
+                                                                            <core:CustomData key="p13nData" value="{'columnKey':'hdsts','leadingProperty':'hdsts', 'description':'to_hdsts/_text' , 'displayBehaviour':'descriptionAndId', 'navigationProperty':'to_hdsts', 'additionalProperty':'to_hdsts/_text', 'sortProperty':'hdsts', 'filterProperty':'hdsts','columnIndex':'7'}" />
+                                                                        </table:customData>
+                                                                        <Label design="Standard" text="Status" />
+                                                                        <table:template>
+                                                                            <Text text="{parts:[{path: 'to_hdsts/_text'} , {path: 'hdsts'}], formatter: 'TableDetails.controller.AnnotationHelper.getLinkTextBasedOnTextArrangement'}" wrapping="false" />
+                                                                        </table:template>
+                                                                    </table:Column>
+                                                                    
+                                                                    <table:Column autoResizable="true" width="12.50em" sortProperty="ptrnr1" filterProperty="" visible="true">
+                                                                        <table:customData>
+                                                                            <core:CustomData key="p13nData" value="{'columnKey':'ptrnr1','leadingProperty':'ptrnr1', 'description':'to_ptrnr1/ptrnm' , 'displayBehaviour':'descriptionAndId', 'navigationProperty':'to_ptrnr1', 'additionalProperty':'to_ptrnr1/ptrnm', 'sortProperty':'ptrnr1', 'filterProperty':'ptrnr1','columnIndex':'9'}" />
+                                                                        </table:customData>
+                                                                        <Label design="Standard" text="Primary Partner" />
+                                                                        <table:template>
+                                                                            <Text text="{parts:[{path: 'to_ptrnr1/ptrnm'} , {path: 'ptrnr1'}], formatter: 'TableDetails.controller.AnnotationHelper.getLinkTextBasedOnTextArrangement'}" wrapping="false" />
+                                                                        </table:template>
+                                                                    </table:Column>
+                                                                </table:columns>
+                                                            </table:Table>
+                                                        </smartTable:SmartTable>
+                                                    </Panel>
+                                                </ScrollContainer>
+                                                <layout:layoutData>
+                                                    <layout:SplitterLayoutData size="100%"/>
+                                                </layout:layoutData>
+                                            </layout:SplitPane>
+                                          
+                                        </layout:PaneContainer>
+                                    </layout:ResponsiveSplitter>
+                                </layout:Grid>
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+            </uxap:sections>
+            <uxap:footer></uxap:footer>
+        </uxap:ObjectPageLayout>
+        <footer>
+            <OverflowToolbar visible="{parts: [{path: 'message>/'}, {path: 'viewModel>/modelChanged'}, {path: 'viewModel>/disp_only'}, {path:'viewModel>/cuttentRoute'}], formatter: 'TableDetails.controller.AnnotationHelper.getDetailPageFooterVisibility'}">
+                <Button id="messageButton" icon="sap-icon://alert" text="{parts:[{path: 'message>/'}], formatter: 'TableDetails.controller.AnnotationHelper.getFooterMessageButtonText'}" visible="{parts: [{path: 'message>/'}, {path: 'viewModel>/showDetailClose'}], formatter: 'TableDetails.controller.AnnotationHelper.getDetailFooterMessageButtonVisibility'}" type="Emphasized" press="onMessagePopover"/>
+                <core:InvisibleText id="showMessagesButtonInvisibleText" text="{i18n>MESSAGE_BUTTON_TYPE}" />
+                <ToolbarSpacer />
+                <Button type="Emphasized" text="Save" enabled="{ui>/enabled}" press="onSave" visible="{= ${ui>/editable} &amp;&amp; ${viewModel>/modelChanged}}">
+                    <customData>
+                        <core:CustomData key="FImport" value="SAVE" />
+                    </customData>
+                </Button>
+                <Button text="{i18n>CANCEL}" press="onCancel" enabled="{ui>/enabled}" visible="{= ${ui>/editable} &amp;&amp; ${viewModel>/modelChanged}}" />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

@@ -1,0 +1,117 @@
+{
+    "_version": "1.40.0",
+    "sap.app": {
+      "id": "TableDetails",
+      "type": "application",
+      "i18n": "i18n/i18n.properties",
+      "applicationVersion": {
+        "version": "0.0.1"
+      },
+      "title": "{{appTitle}}",
+      "description": "{{appDescription}}",
+      "resources": "resources.json"
+      
+     
+    },
+    "sap.ui": {
+      "technology": "UI5",
+      "icons": {
+        "icon": "",
+        "favIcon": "",
+        "phone": "",
+        "phone@2": "",
+        "tablet": "",
+        "tablet@2": ""
+      },
+      "deviceTypes": {
+        "desktop": true,
+        "tablet": true,
+        "phone": true
+      }
+    },
+    "sap.ui5": {
+      "flexEnabled": true,
+      "dependencies": {
+        "minUI5Version": "1.102.1",
+        "libs": {
+          "sap.m": {},
+          "sap.ui.core": {},
+          "sap.f": {},
+          "sap.suite.ui.generic.template": {},
+          "sap.ui.comp": {},
+          "sap.ui.generic.app": {},
+          "sap.ui.table": {},
+          "sap.ushell": {}
+        }
+      },
+      "contentDensities": {
+        "compact": true,
+        "cozy": true
+      },
+      "models": {
+        "i18n": {
+          "type": "sap.ui.model.resource.ResourceModel",
+          "settings": {
+            "bundleName": "TableDetails.i18n.i18n"
+          }
+        },
+        "": {
+          "dataSource": "mainService",
+          "preload": true,
+          "settings": {}
+        }
+      },
+      "resources": {
+        "css": [
+          {
+            "uri": "css/style.css"
+          }
+        ]
+      },
+     
+      "rootView": {
+        "viewName": "TableDetails.view.App",
+        "type": "XML",
+        "async": true
+      },
+      "routing": {
+        "config": {
+          "routerClass": "sap.m.routing.Router",
+          "viewType": "XML",
+          "viewPath": "TableDetails.view",
+          "controlId": "app",
+          "controlAggregation": "pages"
+  
+        },
+        "routes": [{
+            "pattern": "",
+            "name": "page1",
+            "view": "page1",
+            "target": "page1",
+            "controlAggregation": "pages"
+          },
+  
+          {
+  
+            "pattern": "page2/{productPath}",
+            "name": "page2",
+            "target": "page2",
+            "controlAggregation": "pages"
+          }
+        ],
+        "targets": {
+          "page1": {
+            "viewName": "Page1"
+  
+          },
+          "page2": {
+            "viewName": "Page2"
+  
+          }
+        }
+  
+      }
+      
+    }
+  }
+  

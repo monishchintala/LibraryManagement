@@ -1,0 +1,1623 @@
+{
+          "Library":
+          [
+            {
+              "member_id": "id-1657605869450-01",
+              "name": "Timi Fairey",
+              "memberType": "Lecturer",
+              "address": "69405 Buena Vista Parkway",
+              "mobile": "746 481 3374",
+              "email": "tfairey0@umich.edu",
+              "member_issue": "24-07-2022",
+              "member_expiry": "01-02-2027",
+
+              "books":
+
+
+                [
+
+                  {
+
+                    "bkid":"BKID01",
+                    "book": "Rage Inside the Machine",
+
+                    "book_author": "Robert Elliott Smith",
+                    "book_image": "https://m.media-amazon.com/images/I/51IKWnMzU+L.jpg",
+                    "status": "Borrowed",
+                    "book_issue": "03-07-2022",
+                    "due_date": "18-07-2022",
+                    "book_return":"",
+                    "editable": false
+                  },
+                  {
+                    "bkid":"BKID02",
+                    "book": "THINKING FAST AND SLOW",
+
+                    "book_author": "Daniel Kahneman",
+                    "book_image": "https://images-na.ssl-images-amazon.com/images/I/41I0fK0G9kL._SX328_BO1,204,203,200_.jpg",
+                    "status": "Borrowed",
+                    "book_issue": "24-06-2022",
+                    "due_date": "09-07-2022",
+                    "book_return":"",
+                    "editable": false
+                  }
+                ]
+            },
+          
+            {
+              "member_id": "id-1657605869450-02",
+              "name": "Hartwell Houseman",
+              "memberType": "Professor",
+              "address": "2 Shasta Street",
+              "mobile": "531 683 5652",
+              "email": "hhouseman1@thetimes.co.uk",
+
+              "member_issue": "10-10-2022",
+              "member_expiry": "06-06-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID03",
+                  "book": "Army of None",
+
+                  "book_author": "Paul Scharre",
+                  "book_image": "https://m.media-amazon.com/images/I/516lMO16atL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "24-06-2022",
+                  "due_date": "09-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID04",
+                  "book": "How Not to Be Wrong",
+
+                  "book_author": "Jordan Ellenberg",
+                  "book_image": "https://m.media-amazon.com/images/I/516lMO16atL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "24-06-2022",
+                  "due_date": "09-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-03",
+              "name": "Gal Hutable",
+              "mobile": "567 349 1656",
+              "memberType": "Student",
+              "address": "10967 Londonderry Point",
+              "email": "ghutable2@imdb.com",
+
+              "member_issue": "01-05-2022",
+              "member_expiry": "27-07-2027",
+
+
+              "books": [
+                {
+                  "bkid":"BKID05",
+                  "book": "The Victorian Internet",
+                  "book_author": "Tom Standage",
+                  "book_image": "https://m.media-amazon.com/images/I/51K-uTrCeHL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "16-06-2022",
+                  "due_date": "01-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID06",
+                  "book": "The Victorian Internet",
+                  "book_author": "Tom Standage",
+                  "book_image": "https://m.media-amazon.com/images/I/51K-uTrCeHL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "16-06-2022",
+                  "due_date": "01-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-04",
+              "name": "Alyda Gritten",
+              "mobile": "335 924 8762",
+              "memberType": "Lecturer",
+              "address": "5609 Bunker Hill Point",
+              "email": "agritten3@instagram.com",
+
+              "member_issue": "04-02-2022",
+              "member_expiry": "11-08-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID07",
+                  "book": "A World Without Work",
+
+                  "book_author": "Daniel Susskind",
+                  "book_image": "https://m.media-amazon.com/images/I/41NsZZ5pxBL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "17-06-2022",
+                  "due_date": "29-06-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID08",
+                  "book": "A World Without Work",
+                  "book_author": "Daniel Susskind",
+                  "book_image": "https://m.media-amazon.com/images/I/41NsZZ5pxBL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "17-06-2022",
+                  "due_date": "29-06-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-05",
+              "name": "Halley Colquitt",
+              "mobile": "925 727 7397",
+              "memberType": "Professor",
+              "address": "14066 Debs Road",
+              "email": "hcolquitt4@goodreads.com",
+
+              "member_issue": "08-04-2022",
+              "member_expiry": "08-08-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID09",
+                  "book": "The Rise of the Robots",
+
+                  "book_author": "Martin Ford",
+                  "book_image": "https://m.media-amazon.com/images/I/61GMDsnc8oL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "07-07-2022",
+                  "due_date": "22-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID10",
+                  "book": "A World Without Work",
+
+                  "book_author": "Martin Ford",
+                  "book_image": "https://m.media-amazon.com/images/I/61GMDsnc8oL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "07-07-2022",
+                  "due_date": "22-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-06",
+              "name": "Andee Rumming",
+              "mobile": "734 116 0185",
+              "memberType": "Student",
+              "address": "205 Eagle Crest Alley",
+              "email": "arumming5@cnet.com",
+
+              "member_issue": "17-06-2022",
+              "member_expiry": "28-06-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID11",
+                  "book": "Enterprise Artificial Intelligence Transformation",
+
+                  "book_author": "Rashed Haq",
+                  "book_image": "https://m.media-amazon.com/images/I/41lKSe1iy7L.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "11-06-2022",
+                  "due_date": "26-06-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID12",
+                  "book": "A World Without Work",
+
+                  "book_author": "Rashed Haq",
+                  "book_image": "https://m.media-amazon.com/images/I/41lKSe1iy7L.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "11-06-2022",
+                  "due_date": "26-06-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-07",
+              "name": "Allsun Freestone",
+              "mobile": "899 594 1005",
+              "memberType": "Lecturer",
+              "address": "785 Melby Avenue",
+              "email": "afreestone6@youku.com",
+
+              "member_issue": "21-10-2022",
+              "member_expiry": "10-02-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID13",
+                  "book": "Re-Engineering Humanity",
+
+                  "book_author": "Brett Frischmann, Evan Selinger",
+                  "book_image": "https://m.media-amazon.com/images/I/51oSBMn1olL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "25-06-2022",
+                  "due_date": "10-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID14",
+                  "book": "A World Without Work",
+
+                  "book_author": "Brett Frischmann, Evan Selinger",
+                  "book_image": "https://m.media-amazon.com/images/I/51oSBMn1olL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "25-06-2022",
+                  "due_date": "10-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-08",
+              "name": "Gerty Curgenuer",
+              "mobile": "625 402 1091",
+              "memberType": "Professor",
+              "address": "03597 Walton Road",
+              "email": "gcurgenuer7@wunderground.com",
+
+              "member_issue": "04-11-2022",
+              "member_expiry": "19-06-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID15",
+                  "book": "Paradigm Shift in Technologies and Innovation Systems",
+
+                  "book_author": "John Cantwell",
+                  "book_image": "https://m.media-amazon.com/images/I/41RmRo3yjDL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "22-06-2022",
+                  "due_date": "07-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID16",
+                  "book": "Paradigm Shift in Technologies and Innovation Systems",
+
+                  "book_author": "John Cantwell",
+                  "book_image": "https://m.media-amazon.com/images/I/41RmRo3yjDL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "22-06-2022",
+                  "due_date": "07-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-09",
+              "name": "Reine Olligan",
+              "mobile": "964 698 2092",
+              "memberType": "Student",
+              "address": "282 Homewood Way",
+              "email": "rolligan8@blinklist.com",
+
+              "member_issue": "25-09-2022",
+              "member_expiry": "24-09-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID17",
+                  "book": "Future-Ready Leadership",
+
+                  "book_author": "Chris R. Groscurth",
+                  "book_image": "https://m.media-amazon.com/images/I/41uV-2KDgSL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "10-06-2022",
+                  "due_date": "25-06-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID18",
+                  "book": "Future-Ready Leadership",
+
+                  "book_author": "Chris R. Groscurth",
+                  "book_image": "https://m.media-amazon.com/images/I/41uV-2KDgSL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "10-06-2022",
+                  "due_date": "25-06-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-10",
+              "name": "Daune Sivior",
+              "mobile": "330 138 5389",
+              "address": "66 Cardinal Avenue",
+              "memberType": "Lecturer",
+              "email": "dsivior9@japanpost.jp",
+
+              "member_issue": "12-04-2022",
+              "member_expiry": "23-05-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID19",
+                  "book": "Search Engine Society",
+
+                  "book_author": "Alexander Halavais",
+                  "book_image": "https://m.media-amazon.com/images/I/41+YVngDHrL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "14-06-2022",
+                  "due_date": "29-06-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID20",
+                  "book": "Future-Ready Leadership",
+
+                  "book_author": "Alexander Halavais",
+                  "book_image": "https://m.media-amazon.com/images/I/41+YVngDHrL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "14-06-2022",
+                  "due_date": "29-06-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-11",
+              "name": "Jeddy Storr",
+              "mobile": "689 945 1511",
+              "memberType": "Professor",
+              "address": "31638 Declaration Place",
+              "email": "jstorra@abc.net.au",
+
+              "member_issue": "08-08-2022",
+              "member_expiry": "20-03-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID21",
+                  "book": "Legal Tech and Digital Transformation",
+
+                  "book_author": "Rupprecht Graf von Pfeil, Gerard Tanja, Robert van Beemen",
+                  "book_image": "https://m.media-amazon.com/images/I/41YzU03eprL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "05-07-2022",
+                  "due_date": "20-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID22",
+                  "book": "Legal Tech and Digital Transformation",
+
+                  "book_author": "Rupprecht Graf von Pfeil, Gerard Tanja, Robert van Beemen",
+                  "book_image": "https://m.media-amazon.com/images/I/41YzU03eprL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "05-07-2022",
+                  "due_date": "20-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-12",
+              "name": "Carlynn Leander",
+              "mobile": "322 159 6164",
+              "memberType": "Student",
+              "address": "342 Pleasure Park",
+              "email": "cleanderb@mozilla.org",
+
+              "member_issue": "16-04-2022",
+              "member_expiry": "05-07-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID23",
+                  "book": "Big Data, Big Challenges",
+
+                  "book_author": "Mowafa Househ, Andre W. Kushniruk, Elizabeth M. Borycki",
+                  "book_image": "https://m.media-amazon.com/images/I/41MN4c3AWRL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "07-07-2022",
+                  "due_date": "22-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID24",
+                  "book": "Big Data, Big Challenges",
+
+                  "book_author": "Mowafa Househ, Andre W. Kushniruk, Elizabeth M. Borycki",
+                  "book_image": "https://m.media-amazon.com/images/I/41MN4c3AWRL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "07-07-2022",
+                  "due_date": "22-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-13",
+              "name": "Teddy Porritt",
+              "mobile": "562 322 3508",
+              "memberType": "Lecturer",
+              "address": "41216 Warner Hill",
+              "email": "tporrittc@pen.io",
+
+              "member_issue": "12-05-2022",
+              "member_expiry": "26-11-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID25",
+                  "book": "Online Film Production in China Using Blockchain and Smart Contracts",
+
+                  "book_author": "Patrice Poujol",
+                  "book_image": "https://m.media-amazon.com/images/I/417L0mwfxIL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "18-06-2022",
+                  "due_date": "03-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID26",
+                  "book": "Online Film Production in China Using Blockchain and Smart Contracts",
+
+                  "book_author": "Patrice Poujol",
+                  "book_image": "https://m.media-amazon.com/images/I/417L0mwfxIL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "18-06-2022",
+                  "due_date": "03-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-14",
+              "name": "Jennifer Tuffield",
+              "mobile": "271 341 5847",
+              "memberType": "Professor",
+              "address": "80835 Sutherland Center",
+              "email": "jtuffieldd@desdev.cn",
+
+              "member_issue": "10-07-2022",
+              "member_expiry": "07-02-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID27",
+                  "book": "Transforming Healthcare with Big Data and AI",
+
+                  "book_author": "Alex Liu, Anna Farzindar, Mingbo Gong",
+                  "book_image": "https://m.media-amazon.com/images/I/51XVqXjZgnL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "17-06-2022",
+                  "due_date": "02-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-15",
+              "name": "Deerdre Scrinage",
+              "mobile": "862 540 3469",
+              "memberType": "Student",
+              "address": "85 Heffernan Plaza",
+              "email": "dscrinagee@cornell.edu",
+
+              "member_issue": "29-04-2022",
+              "member_expiry": "28-06-2027"
+
+
+            },
+            {
+              "member_id": "id-1657605869450-16",
+              "name": "Eduardo Blundon",
+              "mobile": "422 303 3480",
+              "memberType": "Lecturer",
+              "address": "165 Westend Terrace",
+              "email": "eblundonf@state.tx.us",
+
+              "member_issue": "23-09-2022",
+              "member_expiry": "07-10-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID28",
+                  "book": "Information Technology Law",
+
+                  "book_author": "Ian Lloyd",
+                  "book_image": "https://m.media-amazon.com/images/I/41CIjzCVJqL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "29-06-2022",
+                  "due_date": "14-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID29",
+                  "book": "Information Technology Law",
+
+                  "book_author": "Ian Lloyd",
+                  "book_image": "https://m.media-amazon.com/images/I/41CIjzCVJqL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "29-06-2022",
+                  "due_date": "14-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID30",
+                  "book": "Information Technology Law",
+
+                  "book_author": "Ian Lloyd",
+                  "book_image": "https://m.media-amazon.com/images/I/41CIjzCVJqL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "29-06-2022",
+                  "due_date": "14-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-17",
+              "name": "Honor Burges",
+              "mobile": "116 607 7878",
+              "memberType": "Professor",
+              "address": "51 Longview Alley",
+              "email": "hburgesg@yandex.ru",
+
+              "member_issue": "01-10-2022",
+              "member_expiry": "15-12-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID31",
+                  "book": "Who Owns the Future?",
+
+                  "book_author": "Jaron Lanier",
+                  "book_image": "https://m.media-amazon.com/images/I/51Ubt3GQcdL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "26-06-2022",
+                  "due_date": "11-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID32",
+                  "book": "Who Owns the Future?",
+
+                  "book_author": "Jaron Lanier",
+                  "book_image": "https://m.media-amazon.com/images/I/51Ubt3GQcdL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "26-06-2022",
+                  "due_date": "11-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-18",
+              "name": "Sayres Heiden",
+              "mobile": "973 530 5521",
+              "memberType": "Student",
+              "address": "0633 Main Road",
+              "email": "sheidenh@businessweek.com",
+
+              "member_issue": "25-09-2022",
+              "member_expiry": "06-01-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID33",
+                  "book": "Participatory Culture in a Networked Era",
+
+                  "book_author": "Henry Jenkins, Mizuko Ito, danah boyd",
+                  "book_image": "https://m.media-amazon.com/images/I/61mfWKBiYNL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "01-07-2022",
+                  "due_date": "16-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID34",
+                  "book": "Participatory Culture in a Networked Era",
+
+                  "book_author": "Henry Jenkins, Mizuko Ito, danah boyd",
+                  "book_image": "https://m.media-amazon.com/images/I/61mfWKBiYNL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "01-07-2022",
+                  "due_date": "16-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-19",
+              "name": "Trisha Trengrove",
+              "mobile": "133 642 0146",
+              "memberType": "Lecturer",
+              "address": "75454 Waywood Plaza",
+              "email": "ttrengrovei@photobucket.com",
+
+              "member_issue": "19-04-2022",
+              "member_expiry": "21-05-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID35",
+                  "book": "Technology vs Humanity",
+
+                  "book_author": "Gerd Leonhard",
+                  "book_image": "https://m.media-amazon.com/images/I/41fcCx4ofBL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "26-06-2022",
+                  "due_date": "11-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID36",
+                  "book": "Technology vs Humanity",
+
+                  "book_author": "Gerd Leonhard",
+                  "book_image": "https://m.media-amazon.com/images/I/41fcCx4ofBL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "26-06-2022",
+                  "due_date": "11-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-20",
+              "name": "Kristos Rojas",
+              "mobile": "913 122 3200",
+              "memberType": "Professor",
+              "address": "52051 Eastwood Way",
+              "email": "krojasj@yale.edu",
+
+              "member_issue": "17-04-2022",
+              "member_expiry": "17-03-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID37",
+                  "book": "Appetite for Self-Destruction",
+
+                  "book_author": "Steve Knopper",
+                  "book_image": "https://m.media-amazon.com/images/I/41o1B3Sq4PL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "24-06-2022",
+                  "due_date": "09-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID38",
+                  "book": "Appetite for Self-Destruction",
+
+                  "book_author": "Steve Knopper",
+                  "book_image": "https://m.media-amazon.com/images/I/41o1B3Sq4PL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "24-06-2022",
+                  "due_date": "09-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-21",
+              "name": "Yvor Rhubottom",
+              "mobile": "294 568 5867",
+              "memberType": "Student",
+              "address": "2 Monica Place",
+              "email": "yrhubottomk@desdev.cn",
+
+              "member_issue": "13-11-2022",
+              "member_expiry": "13-09-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID39",
+                  "book": "Regulating Social Media",
+
+                  "book_author": "Susan J. Drucker, Gary Gumper",
+                  "book_image": "https://m.media-amazon.com/images/I/51OvtCy4LCL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "21-06-2022",
+                  "due_date": "06-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID40",
+                  "book": "Regulating Social Media",
+
+                  "book_author": "Susan J. Drucker, Gary Gumper",
+                  "book_image": "https://m.media-amazon.com/images/I/51OvtCy4LCL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "21-06-2022",
+                  "due_date": "06-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-22",
+              "name": "Reyna Early",
+              "mobile": "110 576 8353",
+              "memberType": "Lecturer",
+              "address": "9 Larry Court",
+              "email": "rearlyl@un.org",
+
+              "member_issue": "28-01-2022",
+              "member_expiry": "19-07-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID41",
+                  "book": "Regulating Social Media",
+
+                  "book_author": "Ruha Benjamin",
+                  "book_image": "https://m.media-amazon.com/images/I/51Zx5vhepoL._SL500_.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "22-06-2022",
+                  "due_date": "07-06-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID42",
+                  "book": "Regulating Social Media",
+
+                  "book_author": "Ruha Benjamin",
+                  "book_image": "https://m.media-amazon.com/images/I/51Zx5vhepoL._SL500_.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "22-06-2022",
+                  "due_date": "07-06-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-23",
+              "name": "Vernon Lidden",
+              "mobile": "742 169 7471",
+              "memberType": "Professor",
+              "address": "8361 Packers Point",
+              "email": "vliddenm@xing.com",
+
+              "member_issue": "20-02-2022",
+              "member_expiry": "13-05-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID43",
+                  "book": "THE NATIONAL ARTIFICIAL INTELLIGENCE RESEARCH and DEVELOPMENT STRATEGIC PLAN",
+
+                  "book_author": "National Science and Technology Council",
+                  "book_image": "https://m.media-amazon.com/images/I/41T50Yy5uUL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "09-06-2022",
+                  "due_date": "24-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID44",
+                  "book": "THE NATIONAL ARTIFICIAL INTELLIGENCE RESEARCH and DEVELOPMENT STRATEGIC PLAN",
+
+                  "book_author": "National Science and Technology Council",
+                  "book_image": "https://m.media-amazon.com/images/I/41T50Yy5uUL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "09-06-2022",
+                  "due_date": "24-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-24",
+              "name": "Almira Easterfield",
+              "mobile": "915 234 8156",
+              "memberType": "Student",
+              "address": "0 Bunker Hill Terrace",
+              "email": "aeasterfieldn@examiner.com",
+
+              "member_issue": "02-04-2022",
+              "member_expiry": "28-10-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID45",
+                  "book": "The Driver in the Driverless Car",
+
+                  "book_author": "Vivek Wadhwa, Alex Salkever",
+                  "book_image": "https://m.media-amazon.com/images/I/41LDxveTb0L.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "13-06-2022",
+                  "due_date": "28-06-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID46",
+                  "book": "The Driver in the Driverless Car",
+
+                  "book_author": "Vivek Wadhwa, Alex Salkever",
+                  "book_image": "https://m.media-amazon.com/images/I/41LDxveTb0L.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "13-06-2022",
+                  "due_date": "28-06-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-25",
+              "name": "Lukas Medd",
+              "mobile": "290 574 3462",
+              "memberType": "Lecturer",
+              "address": "0 Butterfield Parkway",
+              "email": "lmeddo@hud.gov",
+
+              "member_issue": "17-01-2022",
+              "member_expiry": "20-03-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID47",
+                  "book": "The Exponential Age",
+
+                  "book_author": "Azeem Azhar",
+                  "book_image": "https://m.media-amazon.com/images/I/31D9qyEH+RS._SL500_.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "04-07-2022",
+                  "due_date": "19-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID48",
+                  "book": "The Exponential Age",
+
+                  "book_author": "Azeem Azhar",
+                  "book_image": "https://m.media-amazon.com/images/I/31D9qyEH+RS._SL500_.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "04-07-2022",
+                  "due_date": "19-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-26",
+              "name": "Andrey Ahearne",
+              "mobile": "577 697 4200",
+              "memberType": "Professor",
+              "address": "959 Graedel Avenue",
+              "email": "aahearnep@myspace.com",
+
+              "member_issue": "09-07-2022",
+              "member_expiry": "14-11-2027",
+
+
+              "books": [
+                {
+                  "bkid":"BKID49",
+                  "book": "Stand out of our Light",
+                  "book_author": "James Williams",
+                  "book_image": "https://m.media-amazon.com/images/I/51aA7d-48rL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "14-06-2022",
+                  "due_date": "29-06-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+
+                {
+                  "bkid":"BKID50",
+                  "book": "Stand out of our Light",
+                  "book_author": "James Williams",
+                  "book_image": "https://m.media-amazon.com/images/I/51aA7d-48rL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "14-06-2022",
+                  "due_date": "29-06-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID51",
+                  "book": "Stand out of our Light",
+                  "book_author": "James Williams",
+                  "book_image": "https://m.media-amazon.com/images/I/51aA7d-48rL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "14-06-2022",
+                  "due_date": "29-06-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-27",
+              "name": "Marcelle Grisard",
+              "mobile": "619 846 7196",
+              "memberType": "Student",
+              "address": "441 Farragut Point",
+              "email": "mgrisardq@theglobeandmail.com",
+
+              "member_issue": "06-10-2022",
+              "member_expiry": "01-10-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID52",
+                  "book": "Responsible Use of the Internet in Education",
+                  "book_author": "Aniekan Ebiefung",
+                  "book_image": "https://m.media-amazon.com/images/I/412VVR505GL._SL500_.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "08-06-2022",
+                  "due_date": "23-06-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID53",
+                  "book": "Responsible Use of the Internet in Education",
+                  "book_author": "Aniekan Ebiefung",
+                  "book_image": "https://m.media-amazon.com/images/I/412VVR505GL._SL500_.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "08-06-2022",
+                  "due_date": "23-06-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id":"id-1657605869450-28",
+              "name": "Malva Portlock",
+              "mobile": "473 538 5287",
+              "memberType": "Lecturer",
+              "address": "75 Mcbride Point",
+              "email": "mportlockr@amazon.co.jp",
+
+              "member_issue": "20-07-2022",
+              "member_expiry": "22-02-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID54",
+                  "book": "Ethics for the Information Age",
+                  "book_author": "Michael J. Quinn",
+                  "book_image": "https://m.media-amazon.com/images/I/51LlrFXiAOL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "08-06-2022",
+                  "due_date": "23-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID55",
+                  "book": "Ethics for the Information Age",
+                  "book_author": "Michael J. Quinn",
+                  "book_image": "https://m.media-amazon.com/images/I/51LlrFXiAOL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "08-06-2022",
+                  "due_date": "23-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id":"id-1657605869450-29",
+              "name": "Kev Jimeno",
+              "mobile": "781 355 5706",
+              "memberType": "Professor",
+              "address": "4 Arizona Circle",
+              "email": "kjimenos@mtv.com",
+
+              "member_issue": "07-04-2022",
+              "member_expiry": "07-03-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID56",
+                  "book": "Smaller Faster Lighter Denser Cheaper",
+                  "book_author": "Robert Bryce",
+                  "book_image": "https://m.media-amazon.com/images/I/51DSVGevkjL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "20-06-2022",
+                  "due_date": "05-07-2022",
+                  "book_return":"",
+                  "editable": false
+                },
+                {
+                  "bkid":"BKID57",
+                  "book": "Smaller Faster Lighter Denser Cheaper",
+                  "book_author": "Robert Bryce",
+                  "book_image": "https://m.media-amazon.com/images/I/51DSVGevkjL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "20-06-2022",
+                  "due_date": "05-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "member_id": "id-1657605869450-30",
+              "name": "Nicola Kee",
+              "mobile": "199 883 9325",
+              "memberType": "Student",
+              "address": "91009 Meadow Valley Road",
+              "email": "nkeet@wix.com",
+
+              "member_issue": "03-05-2022",
+              "member_expiry": "22-10-2027",
+
+              "books": [
+                {
+                  "bkid":"BKID58",
+                  "book": "The Age of Disruption",
+                  "book_author": "Bernard Stiegler",
+                  "book_image": "https://m.media-amazon.com/images/I/51AZzhvw7dL.jpg",
+                  "status": "Borrowed",
+                  "book_issue": "20-06-2022",
+                  "due_date": "05-07-2022",
+                  "book_return":"",
+                  "editable": false
+                }
+              ]
+
+            }
+
+
+
+          ],
+          "memberType": [
+            {
+              "key": "Lecturer",
+              "name": "Lecturer"
+            },
+            {
+              "key": "Professor",
+              "name": "Professor"
+            },
+            {
+              "key": "Student",
+              "name": "Student"
+            }
+
+          ],
+
+          "Filter": {
+            "text": "Filtered by: nothing"
+          },
+          "Edit": {
+            "text1": false,
+            "text2":true
+          },
+          "booksData": [
+            {
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            }
+          ],
+          "cols": [
+            {
+              "label": "Book Id",
+              "template": "bkid",
+              "width": "5rem"
+            },
+            {
+              "label": "Book Name",
+              "template": "book"
+            },
+            {
+              "label": "Book Author",
+              "template": "book_author"
+            },
+            {
+              "label": "Due Date",
+              "template": "due_date"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            },{
+              "bkid":"BKID60",
+              "book": "Rage Inside the Machine",
+              "book_author": "Robert Elliott Smith",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID61",
+              "book": "Army of None",
+              "book_author": "Paul Scharre",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID62",
+              "book": "How Not to Be Wrong",
+              "book_author":"Jordan Ellenberg",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID63",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID64",
+              "book": "The Victorian Internet",
+              "book_author": "Tom Standage",
+              "due_date": "18-07-2022"
+            },
+            {
+              "bkid":"BKID65",
+              "book": "A World Without Work",
+              "book_author": "Daniel Susskind",
+              "due_date": "18-07-2022"
+            }
+          ]
+
+          
+        }
+        

@@ -1,0 +1,260 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns:m="sap.m"
+    xmlns:t="sap.ui.table"
+    xmlns:fb="sap.ui.comp.filterbar"
+	controllerName="TableDetails.controller.Page2"
+	height="100%">
+    <m:App id="detail">
+        <m:pages>
+            <m:Page title="Library Management System" titleAlignment="Center" navButtonPress="onNavPress"
+                showNavButton="true">
+                <ObjectPageLayout id="ObjectPageLayout"
+                    useIconTabBar="true"
+                    showTitleInHeaderContent="true"
+                    showEditHeaderButton="true"
+                    editHeaderButtonPress="handleEditBtnPress"
+                    upperCaseAnchorBar="false"
+                    showFooter="false">
+                    <headerTitle>
+                        <ObjectPageDynamicHeaderTitle>
+                            <expandedHeading>
+                                <m:HBox>
+                                    <m:Title text="{emp>name}" wrapping="true"/>
+                                    
+                                </m:HBox>
+                            </expandedHeading>
+                            <snappedHeading>
+                                <m:FlexBox  fitContainer="true" alignItems="Center">
+                                    <m:Title text="{emp>name}" wrapping="true"/>
+                                </m:FlexBox>
+                            </snappedHeading>
+                            <actions>
+                                <m:Button id="edit" text="Edit" type="Emphasized" press="editDetails"/>
+                                <m:Button id="display" text="Display" type="Transparent" visible="false" press="displayDetails"/>
+                                <m:Button type="Transparent" text="Delete" press="deleteRecord"/>
+                            </actions>
+                        </ObjectPageDynamicHeaderTitle>
+                    </headerTitle>
+                    <headerContent>
+                        <m:HeaderContainer id="headerContainer" scrollStep="200" showDividers="false">
+                            <m:HBox class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+                                <m:Avatar src="sap-icon://employee" class="sapUiMediumMarginEnd sapUiSmallMarginBottom" displaySize="L"/>
+                            </m:HBox>
+                            <m:VBox class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+                                <m:Title text="Member Information" class="sapUiTinyMarginBottom" />
+                                <m:HBox class="sapUiTinyMarginBottom">
+                                    <core:Icon src="sap-icon://account"/>
+                                    <m:Text text="{emp>name}" class="sapUiSmallMarginBegin"/>
+                                </m:HBox>
+                                <m:HBox class="sapUiTinyMarginBottom">
+                                    <core:Icon src="sap-icon://thing-type"/>
+                                    <m:Text text="{emp>memberType}" class="sapUiSmallMarginBegin"/>
+                                </m:HBox>
+                                <m:HBox class="sapUiTinyMarginBottom" visible="{emp>/Edit/text2}">
+                                    <core:Icon src="sap-icon://outgoing-call"/>
+                                    <m:Text text="{emp>mobile}" class="sapUiSmallMarginBegin"/>
+                                </m:HBox>
+                                
+                                <m:HBox class="sapUiTinyMarginBottom" visible="{emp>/Edit/text2}">
+                                    <core:Icon src="sap-icon://addresses"/>
+                                    <m:Text text="{emp>address}" class="sapUiSmallMarginBegin"/>
+                                </m:HBox>
+                            </m:VBox>
+                        </m:HeaderContainer>
+                    </headerContent>
+                    <sections>
+                        <ObjectPageSection titleUppercase="false" id="formSection" title="Details">
+                            <subSections>
+                                <ObjectPageSubSection id="formSections1">
+                                    <blocks>
+                                        <m:VBox class="sapUiSmallMargin">
+                                            <f:SimpleForm id="SimpleFormDisplay354"
+                                                    editable="false"
+                                                    layout="ResponsiveGridLayout"
+                                                    labelSpanXL="3"
+                                                    labelSpanL="3"
+                                                    labelSpanM="3"
+                                                    labelSpanS="12"
+                                                    adjustLabelSpan="true"
+                                                    emptySpanXL="4"
+                                                    emptySpanL="4"
+                                                    emptySpanM="4"
+                                                    emptySpanS="0"
+                                                    columnsXL="1"
+                                                    columnsL="1"
+                                                    columnsM="1"
+                                                    singleContainerFullSize="false">
+                                                <f:content>
+                                                        <m:Label text="{i18n>address}"/>
+                                                        <m:HBox class="abc">
+                                                             <m:Text text="{emp>address}" visible="{emp>/Edit/text2}"/>  
+                                                              <m:Input value="{emp>address}" visible="{emp>/Edit/text1}" change="onSelectUpdate"/>
+                                                        </m:HBox>
+                                                        <m:Label text="{i18n>mobile}"/>
+                                                        <m:HBox class="abc">
+                                                            <m:Text  text="{emp>mobile}" visible="{emp>/Edit/text2}"/>
+                                                            <m:Input type="Tel" value="{emp>mobile}" visible="{emp>/Edit/text1}" change="onSelectUpdate"/>
+                                                        </m:HBox> 
+                                                        <m:Label text="{i18n>issue_date}"/>
+                                                        <m:HBox class="abc">
+                                                            <m:Text text="{emp>member_issue}" visible="{emp>/Edit/text2}"/>
+                                                            <m:DatePicker
+                                                                change="onSelectUpdate"
+                                                                value="{emp>member_issue}"
+                                                                valueFormat="dd-MM-yyyy" displayFormat="dd-MM-yyyy"
+                                                                
+                                                                class="data-item" visible="{emp>/Edit/text1}"/>
+                                                        </m:HBox>
+                                                        <m:Label text="{i18n>expiry_date}"/>
+                                                        <m:HBox class="abc">
+                                                            <m:Text text="{emp>member_expiry}" visible="{emp>/Edit/text2}"/>
+                                                            <m:DatePicker
+                                                                change="onSelectUpdate"
+                                                                value="{emp>member_expiry}"
+                                                                valueFormat="dd-MM-yyyy" displayFormat="dd-MM-yyyy"
+                                                                class="data-item" visible="{emp>/Edit/text1}"/>
+                                                        </m:HBox>
+                                                </f:content>
+                                            </f:SimpleForm>
+                                        </m:VBox>
+                                    </blocks>
+                                </ObjectPageSubSection>
+                            </subSections>
+                        </ObjectPageSection>
+                        <ObjectPageSection titleUppercase="false" id="goalsSection" title="Books">
+                            <subSections>
+                                <ObjectPageSubSection id="goalsSectionSS1">
+                                    <blocks>
+                                        <t:Table
+                                        id="empData"
+                                        rows="{emp>books}"
+                                        editable="false"
+                                        selectionMode="MultiToggle"
+                                        visibleRowCount="4"
+                                        paste="onPaste"
+                                        ariaLabelledBy="title"
+                                         threshold="25" rowSelectionChange="onSelectionChange" rowsUpdated=".onRowsUpdated">
+                                            <t:extension>
+                                                <m:OverflowToolbar style="Clear">
+                                                    <m:Title id="title" text="Books"/>
+                                                    <m:ToolbarSpacer />
+                                                    <m:Button
+                                                                            icon="sap-icon://add"
+                                                                            tooltip="{i18n>ad}"
+                                                                            press=".addDetails"
+                                                                            type="Transparent"
+                                                                            visible="{emp>/Edit/text1}"/>
+                                                    <m:Button
+                                                                            icon="sap-icon://delete"
+                                                                            tooltip="{i18n>dd}"
+                                                                            press=".deleteDetails"
+                                                                            type="Transparent"
+                                                                            visible="{emp>/Edit/text1}"/>
+                                                    <m:Button press="onTableSettings" icon="sap-icon://drop-down-list" tooltip="Settings" visible="{emp>/Edit/text1}"/>
+                                                </m:OverflowToolbar>
+                                            </t:extension>
+                                            <t:columns>
+                                                 <t:Column width="auto">
+                                                  
+                                                    <m:Label text="{i18n>book_id}"/>
+                                                    <t:template>
+                                                    
+                                                    	<m:HBox>
+                                                        <m:customData>
+                                                    <core:CustomData
+                                                        key="style-class"
+                                                        value="nameOfYourColor"
+                                                        writeToDom="true"/>
+                                                    </m:customData>
+                                                            <!-- <m:Input value="{emp>book}" visible="{edit>/Edit/text1}"/> -->
+                                                            <m:Text text="{emp>bkid}"/>
+                                                        </m:HBox>
+                                                    </t:template>
+                                                </t:Column>
+                                                <t:Column width="auto">
+                                                    <m:Label text="{i18n>book_name}"/>
+                                                    <t:template>
+                                                    	<m:HBox>
+                                                            <!-- <m:Input value="{emp>book}" visible="{edit>/Edit/text1}"/> -->
+                                                            <m:Text id="bookname" text="{emp>book}"/>
+                                                        </m:HBox>
+                                                    </t:template>
+                                                </t:Column>
+                                                <t:Column width="auto">
+                                                    <m:Label text="{i18n>book_auth}"/>
+                                                    <t:template>
+                                                        <m:HBox>
+                                                            <!-- <m:Input value="{emp>book_author}" visible="{edit>/Edit/text1}"/> -->
+                                                            <m:Text id="bookauth" text="{emp>book_author}"/>
+                                                        </m:HBox>
+                                                    </t:template>
+                                                </t:Column>
+                                                <t:Column width="auto">
+                                                    <m:Label text="{i18n>book_issue}"/>
+                                                    <t:template>
+                                                        <m:HBox>
+                                                        <!-- <m:DatePicker
+                                                                value="{emp>book_issue}"
+                                                                valueFormat="dd-MM-yyyy" displayFormat="dd-MM-yyyy"
+                                                                change="handleChange"
+                                                                class="data-item" visible="{edit>/Edit/text1}"/> -->
+                                                            
+                                                            <m:Text text="{emp>book_issue}"/>
+                                                        </m:HBox>
+                                                    </t:template>
+                                                </t:Column>
+                                                <t:Column width="auto">
+                                                    <m:Label text="{i18n>book_due}"/>
+                                                    <t:template>
+                                                        <m:HBox>
+                                                            
+                                                            <m:Text text="{emp>due_date}"/>
+                                                        </m:HBox>
+                                                    </t:template>
+                                                </t:Column>
+                                                <t:Column width="auto">
+                                                    <m:Label text="{i18n>book_return}"/>
+                                                    <t:template>
+                                                        <m:HBox>
+                                                            <m:DatePicker
+                                                                id="bookReturn"
+                                                                value="{emp>book_return}"
+                                                                valueFormat="dd-MM-yyyy" displayFormat="dd-MM-yyyy"
+                                                                change="handleChange"
+                                                                class="data-item"
+                                                                editable="{emp>/Edit/text1}"/>
+                                                        </m:HBox>
+                                                    </t:template>
+                                                </t:Column>
+                                                <t:Column width="auto">
+                                                    <m:Label text="{i18n>status}"/>
+                                                    <t:template>
+                                                        <m:HBox>
+                                                            <!-- <m:Input value="{emp>status}" visible="{edit>/Edit/text1}"/> -->
+                                                            <m:ObjectStatus text="{emp>status}" state="{path: 'emp>status', formatter: '.formatter.onStatusFormatter'}"/>
+                                                        </m:HBox>
+                                                    </t:template>
+                                                </t:Column>
+                                            </t:columns>
+                                        </t:Table>
+                                    </blocks>
+                                </ObjectPageSubSection>
+                            </subSections>
+                        </ObjectPageSection>
+                    </sections>
+                    <footer>
+                        <m:OverflowToolbar>
+                            <m:ToolbarSpacer />
+                            <m:Button type="Emphasized" text="Save" press=".send"/>
+                            <m:Button type="Transparent" text="Cancel" press=".cancel"/>
+                        </m:OverflowToolbar>
+                    </footer>
+                </ObjectPageLayout>
+            </m:Page>
+        </m:pages>
+    </m:App>
+</mvc:View>

@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <ViewSettingsDialog confirm="onConfirm">
+        <sortItems>
+            <ViewSettingsItem selected="true" key="book" text="Book Name"/>
+            <ViewSettingsItem key="book_author" text="Book Author"/>
+        </sortItems>
+        <groupItems>
+            <ViewSettingsItem key="status" text="Status"/>
+        </groupItems>
+    </ViewSettingsDialog>
+</core:FragmentDefinition>
